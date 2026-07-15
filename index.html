@@ -1,182 +1,169 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FRZN — COLLECTION ARTIC 01</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Midterm</title>
+
+<!-- ฟอนต์: Anton = หัวใหญ่ตัวหนา, Space Mono = ป้ายกำกับ/สเปก, Inter = เนื้อความ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- ไฟล์ CSS แยก -->
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
-  <header class="nav">
-    <div class="nav__logo">FRZN</div>
-    <nav class="nav__menu">
-      <a href="#">[ CATALOG ]</a>
-      <a href="#">[ PUFFERS ]</a>
-      <a href="#">[ BOOTS ]</a>
-      <a href="#">[ CATALOG ]</a>
-      <a href="#">[ PUFFERS ]</a>
+<!-- ===== NAV ===== -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <div class="logo">PARN</div>
+    <nav class="menu">
+      <a href="#top5">[ Top 5 ]</a>
+      <a href="#top5">[ Collection ]</a>
+      <a href="#spotlight">[ No.1 Pick ]</a>
+      <a href="#">[ Lookbook ]</a>
     </nav>
-    <div class="nav__icons">
-      <button aria-label="ค้นหา">⌕</button>
-      <button aria-label="ตะกร้าสินค้า">▢</button>
+    <div class="nav-ico">
+      <span>⌕</span>
+      <span>☰</span>
     </div>
-  </header>
+  </div>
+</header>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero">
-    <div class="hero__info">
-      <p class="tag">[ SERIES: STASIS MK.I ] &nbsp; [ SERIES ]</p>
-      <h1 class="hero__title">COLLECTION<br>ARTIC 01<sup>™</sup></h1>
-
-      <div class="option">
-        <span class="option__label">SIZE</span>
-        <ul class="option__list">
-          <li>S</li><li>M</li><li class="is-active">L</li><li>XL</li>
-        </ul>
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="hero-eyebrow">
+        <span class="tag">Series: Stasis Mk.I</span>
+        <span class="tag">Editorial</span>
       </div>
-      <div class="option">
-        <span class="option__label">COLOUR</span>
-        <ul class="option__list">
-          <li>WHITE</li><li class="is-active">SILVER</li>
-        </ul>
-      </div>
+      <h1>Collection<br>Arctic 01<sup>™</sup></h1>
+      <p class="hero-lead">
+        คัดมาแล้ว 5 ตัวที่โดดเด่นที่สุดของไลน์ Extreme Cold —
+        พัฟเฟอร์เนื้อกลอสส์ ทนหนาวจัด งานเทคนิคสายสตรีท ที่เราอยากให้คุณเห็นก่อนใคร
+      </p>
+      <a href="#top5" class="hero-cta">
+        <span class="arrow">↗</span>
+        ดู Top 5 ทั้งหมด
+      </a>
+    </div>
 
-      <div class="hero__cart">
-        <button class="octagon" aria-label="ดูสินค้า">↗</button>
-        <div class="hero__cart-text">
-          <span>ADD TO CART</span>
-          <strong>$899.99</strong>
+    <!-- ภาพหลัก: แทน .ph ด้วย <img src="รูปคุณ" alt="..."> ได้เลย -->
+    <div class="hero-shot">
+      <div class="ph">[ HERO IMAGE ]</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TOP 5 ===== -->
+<section class="top" id="top5">
+  <div class="wrap">
+
+    <div class="top-head">
+      <h2>The Top 5</h2>
+      <div class="sub">
+        <span class="tag">Ranked Selection</span>
+        <span class="tag">Extreme Cold Line</span>
+      </div>
+    </div>
+
+    <p class="top-intro">
+      นับถอยหลังจากอันดับ 05 สู่ตัวท็อปสุดของคอลเลกชัน —
+      แต่ละตัวเลือกจากงานตัดเย็บ เนื้อผ้า และการวางตัวในลุคจริง ไม่ใช่แค่หน้าตา
+    </p>
+
+    <!-- อันดับ 05 → 02 -->
+    <div class="rank-grid">
+
+      <article class="rank">
+        <div class="rank-img">
+          <span class="rank-no">05</span>
+          <div class="ph">[ IMG · 3:4 ]</div>
+        </div>
+        <div class="rank-body">
+          <div class="name">Glacier White<br>Insulated Puffer</div>
+          <div class="spec">Fabric · Matte Nylon<br>Rating · −30°C<br>Colour · Grey / Bone</div>
+          <p class="blurb">ทรงโอเวอร์ไซส์นุ่ม ให้ลุคอบอุ่นแบบไม่พยายาม</p>
+        </div>
+      </article>
+
+      <article class="rank">
+        <div class="rank-img">
+          <span class="rank-no">04</span>
+          <div class="ph">[ IMG · 3:4 ]</div>
+        </div>
+        <div class="rank-body">
+          <div class="name">Polar Gloss<br>Blue Puffer</div>
+          <div class="spec">Fabric · High-Gloss<br>Rating · −25°C<br>Colour · Blue Gloss</div>
+          <p class="blurb">ผิวสะท้อนแสงเย็น ๆ เด่นทันทีตั้งแต่ก้าวแรก</p>
+        </div>
+      </article>
+
+      <article class="rank">
+        <div class="rank-img">
+          <span class="rank-no">03</span>
+          <div class="ph">[ IMG · 3:4 ]</div>
+        </div>
+        <div class="rank-body">
+          <div class="name">Stealth Black<br>Heavy Puffer</div>
+          <div class="spec">Fabric · Shell Tech<br>Rating · −35°C<br>Colour · Navy / Black</div>
+          <p class="blurb">โทนมืดเรียบคม ใส่ได้ทุกลุคแบบไม่ต้องคิดเยอะ</p>
+        </div>
+      </article>
+
+      <article class="rank">
+        <div class="rank-img">
+          <span class="rank-no">02</span>
+          <div class="ph">[ IMG · 3:4 ]</div>
+        </div>
+        <div class="rank-body">
+          <div class="name">Icefield Blue<br>Tech Puffer</div>
+          <div class="spec">Fabric · Ripstop<br>Rating · −28°C<br>Colour · Ice Blue</div>
+          <p class="blurb">ดีเทลเทคนิคจัดเต็ม ทรงคลีนแต่มีมิติ</p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- ===== อันดับ 1 : SPOTLIGHT ===== -->
+    <div class="spotlight" id="spotlight">
+      <div class="spot-media">
+        <div class="ph">[ NO.1 IMAGE ]</div>
+        <span class="big-no">01</span>
+      </div>
+      <div class="spot-copy">
+        <div class="rank1">★ No.1 Pick — Editor's Choice</div>
+        <h3>Aurora Silver<br>Reflective Puffer</h3>
+        <p>
+          ตัวท็อปของ Arctic 01 — เนื้อ reflective เต็มตัวที่เปลี่ยนโทนตามแสง
+          จับคู่กับซิลูเอ็ตโอเวอร์ไซส์และดีเทลกันหนาวระดับ −40°C
+          ตัวเดียวที่รวมทั้งงานเทคนิคและความโดดเด่นไว้ครบ
+        </p>
+        <div class="spot-specs">
+          <span class="chip">Reflective Shell</span>
+          <span class="chip">−40°C Rating</span>
+          <span class="chip">Oversized Fit</span>
+          <span class="chip">Silver / White</span>
         </div>
       </div>
     </div>
 
-    <div class="hero__stage">
-      <div class="hero__main media media--model"></div>
-      <div class="hero__thumbs">
-        <div class="media media--thumb"></div>
-        <div class="media media--thumb"></div>
-        <p class="hero__count">01 <span>——</span> 07</p>
-      </div>
-      <div class="hero__social">
-        <a href="#" aria-label="Instagram">◎</a>
-        <a href="#" aria-label="Facebook">f</a>
-        <a href="#" aria-label="Twitter">✕</a>
-      </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <div class="logo">PARN</div>
+    <div class="note">ARCTIC 01™ · TOP 5 EDITORIAL · STASIS MK.I</div>
+    <div class="nav-ico">
+      <span>ig</span><span>f</span><span>x</span>
     </div>
-  </section>
-
-  <!-- ===== NEW COLLECTION ===== -->
-  <section class="collection">
-    <div class="collection__head">
-      <h2 class="collection__title">NEW COLLECTION</h2>
-      <div class="collection__meta">
-        <ul>
-          <li>[ NEW COLLECTION ]</li>
-          <li>[ SERIES_01 ]</li>
-          <li>[ PUFFERS ]</li>
-        </ul>
-        <ul>
-          <li>PUFFER JACKETS</li>
-          <li>METAL EDITION</li>
-          <li>GLOSS SERIES</li>
-          <li>EXTREME COLD LINE</li>
-        </ul>
-      </div>
-      <button class="filters">FILTERS</button>
-    </div>
-
-    <!-- top row: feature + 3 cards -->
-    <div class="grid grid--top">
-      <article class="feature">
-        <div class="feature__media media media--model"></div>
-        <div class="feature__overlay">
-          <h3>AURORA<sup>™</sup></h3>
-          <div class="feature__cart">
-            <button class="circle" aria-label="ดูสินค้า">↗</button>
-            <div class="feature__cart-text">
-              <span>ADD TO CART</span>
-              <strong>$1,999</strong>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card__media media media--model"></div>
-        <h4>AURORA SILVER<br><em>REFLECTIVE PUFFER JACKET</em></h4>
-        <div class="swatches">
-          <span class="dot dot--white"></span> WHITE
-          <span class="dot dot--blue"></span> BLUE
-        </div>
-        <p class="price">$999.99</p>
-      </article>
-
-      <article class="card">
-        <div class="card__media media media--model"></div>
-        <h4>ORBIT SILVER<br><em>HIGH-GLOSS PUFFER</em></h4>
-        <div class="swatches">
-          <span class="dot dot--silver"></span> SILVER
-        </div>
-        <p class="price">$1,299.99</p>
-      </article>
-
-      <article class="card">
-        <div class="card__media media media--dark"></div>
-        <h4>STEALTH BLACK<br><em>HEAVY SHIELD PUFFER</em></h4>
-        <div class="swatches">
-          <span class="dot dot--black"></span> BLACK
-          <span class="dot dot--white"></span> WHITE
-        </div>
-        <p class="price">$1,199.99</p>
-      </article>
-    </div>
-
-    <!-- bottom row: 5 cards -->
-    <div class="grid grid--bottom">
-      <article class="card">
-        <div class="card__media media media--model"></div>
-        <h4>GLACIER WHITE<br><em>INSULATED PUFFER JACKET</em></h4>
-        <div class="swatches"><span class="dot dot--grey"></span> GREY</div>
-        <p class="price">$1,299.99</p>
-      </article>
-
-      <article class="card">
-        <div class="card__media media media--model"></div>
-        <h4>POLAR GLOSS<br><em>BLUE PUFFER JACKET</em></h4>
-        <div class="swatches"><span class="dot dot--blue"></span> BLUE GLOSS</div>
-        <p class="price">$899.99</p>
-      </article>
-
-      <article class="card">
-        <div class="card__media media media--dark"></div>
-        <h4>STEALTH BLACK<br><em>HEAVY PUFFER JACKET</em></h4>
-        <div class="swatches">
-          <span class="dot dot--navy"></span> NAVY BLUE
-          <span class="dot dot--black"></span> BLACK
-        </div>
-        <p class="price">$1,199.99</p>
-      </article>
-
-      <article class="card">
-        <div class="card__media media media--model"></div>
-        <h4>ICEFIELD BLUE<br><em>TECH PUFFER JACKET</em></h4>
-        <div class="swatches"><span class="dot dot--blue"></span> BLUE</div>
-        <p class="price">$999.99</p>
-      </article>
-
-      <article class="card">
-        <div class="card__media media media--model"></div>
-        <h4>POLAR WHITE<br><em>SHELL PUFFER JACKET</em></h4>
-        <div class="swatches"><span class="dot dot--white"></span> WHITE</div>
-        <p class="price">$1,499.99</p>
-      </article>
-    </div>
-  </section>
+  </div>
+</footer>
 
 </body>
 </html>
