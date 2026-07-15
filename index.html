@@ -1,169 +1,164 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Midterm</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile — Top 5 Anime & Songs</title>
 
-<!-- ฟอนต์: Anton = หัวใหญ่ตัวหนา, Space Mono = ป้ายกำกับ/สเปก, Inter = เนื้อความ -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- ฟอนต์ไทยจาก Google Fonts: Mitr = หัวข้อ / IBM Plex Sans Thai = เนื้อความ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Mitr:wght@400;500;600&display=swap" rel="stylesheet">
 
-<!-- ไฟล์ CSS แยก -->
-<link rel="stylesheet" href="style.css">
+    <!-- ไฟล์สไตล์ภายนอก -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ===== NAV ===== -->
-<header class="nav">
-  <div class="wrap nav-inner">
-    <div class="logo">PARN</div>
-    <nav class="menu">
-      <a href="#top5">[ Top 5 ]</a>
-      <a href="#top5">[ Collection ]</a>
-      <a href="#spotlight">[ No.1 Pick ]</a>
-      <a href="#">[ Lookbook ]</a>
-    </nav>
-    <div class="nav-ico">
-      <span>⌕</span>
-      <span>☰</span>
+    <div class="container">
+
+        <!-- ========== โปรไฟล์ (แก้ชื่อ/รูป/คำแนะนำตัวตรงนี้) ========== -->
+        <header class="profile">
+            <div class="profile-banner"></div>
+            <div class="profile-body">
+                <div class="avatar">
+                    <img src="profileme.jpg" alt="รูปของฉัน" onerror="this.remove()">
+                </div>
+                <div class="profile-info">
+                    <h1>ชื่อ–นามสกุลของคุณ</h1>
+                    <span class="nickname">ชื่อเล่น: —</span>
+                    <p class="bio">สวัสดีค่ะ/ครับ นี่คือหน้าเว็บแนะนำตัวของฉัน รวมอนิเมะและเพลงที่ชอบที่สุด 5 อันดับเอาไว้ในที่เดียว</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== 🎬 Top 5 อนิเมะ ========== -->
+        <section class="fav">
+            <h2>🎬 Top 5 อนิเมะที่ชอบที่สุด</h2>
+            <div class="anime-grid">
+
+                <div class="anime-card">
+                    <div class="poster">
+                        <span class="rank">#1</span>
+                        <img src="anime1.jpg" alt="อนิเมะเรื่องที่ 1" onerror="this.remove()">
+                    </div>
+                    <h3>ชื่ออนิเมะเรื่องที่ 1</h3>
+                    <p>เรื่องนี้คือที่สุดในใจเพราะ...</p>
+                </div>
+
+                <div class="anime-card">
+                    <div class="poster">
+                        <span class="rank">#2</span>
+                        <img src="anime2.jpg" alt="อนิเมะเรื่องที่ 2" onerror="this.remove()">
+                    </div>
+                    <h3>ชื่ออนิเมะเรื่องที่ 2</h3>
+                    <p>เรื่องนี้คือที่สุดในใจเพราะ...</p>
+                </div>
+
+                <div class="anime-card">
+                    <div class="poster">
+                        <span class="rank">#3</span>
+                        <img src="anime3.jpg" alt="อนิเมะเรื่องที่ 3" onerror="this.remove()">
+                    </div>
+                    <h3>ชื่ออนิเมะเรื่องที่ 3</h3>
+                    <p>เรื่องนี้คือที่สุดในใจเพราะ...</p>
+                </div>
+
+                <div class="anime-card">
+                    <div class="poster">
+                        <span class="rank">#4</span>
+                        <img src="anime4.jpg" alt="อนิเมะเรื่องที่ 4" onerror="this.remove()">
+                    </div>
+                    <h3>ชื่ออนิเมะเรื่องที่ 4</h3>
+                    <p>เรื่องนี้คือที่สุดในใจเพราะ...</p>
+                </div>
+
+                <div class="anime-card">
+                    <div class="poster">
+                        <span class="rank">#5</span>
+                        <img src="anime5.jpg" alt="อนิเมะเรื่องที่ 5" onerror="this.remove()">
+                    </div>
+                    <h3>ชื่ออนิเมะเรื่องที่ 5</h3>
+                    <p>เรื่องนี้คือที่สุดในใจเพราะ...</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========== 🎧 Top 5 เพลง (แก้ลิงก์ใน iframe src เป็นเพลงของคุณ) ========== -->
+        <section class="fav">
+            <h2>🎧 Top 5 เพลงที่ชอบที่สุด</h2>
+            <div class="song-list">
+
+                <div class="song">
+                    <div class="song-meta">
+                        <span class="song-num">1</span>
+                        <span class="song-title">ชื่อเพลงอันดับที่ 1</span>
+                        <span class="song-sub">ศิลปิน / วง</span>
+                    </div>
+                    <div class="song-video">
+                        <iframe src="https://www.youtube.com/embed/C40oligg6xE" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="song">
+                    <div class="song-meta">
+                        <span class="song-num">2</span>
+                        <span class="song-title">ชื่อเพลงอันดับที่ 2</span>
+                        <span class="song-sub">ศิลปิน / วง</span>
+                    </div>
+                    <div class="song-video">
+                        <iframe src="https://www.youtube.com/embed/1VP8JrTHoHo" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="song">
+                    <div class="song-meta">
+                        <span class="song-num">3</span>
+                        <span class="song-title">ชื่อเพลงอันดับที่ 3</span>
+                        <span class="song-sub">ศิลปิน / วง</span>
+                    </div>
+                    <div class="song-video">
+                        <iframe src="https://www.youtube.com/embed/x_RYZsOfpKY" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="song">
+                    <div class="song-meta">
+                        <span class="song-num">4</span>
+                        <span class="song-title">ชื่อเพลงอันดับที่ 4</span>
+                        <span class="song-sub">ศิลปิน / วง</span>
+                    </div>
+                    <div class="song-video">
+                        <iframe src="https://www.youtube.com/embed/eHHQaoEW30Q" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="song">
+                    <div class="song-meta">
+                        <span class="song-num">5</span>
+                        <span class="song-title">ชื่อเพลงอันดับที่ 5</span>
+                        <span class="song-sub">ศิลปิน / วง</span>
+                    </div>
+                    <div class="song-video">
+                        <iframe src="https://www.youtube.com/embed/M2WTUoy4y6E" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <button id="greetBtn">✨ กดเพื่อทักทาย ✨</button>
+        <footer>ทำโดย ... · โปรเจกต์กลางภาค</footer>
+
     </div>
-  </div>
-</header>
 
-<!-- ===== HERO ===== -->
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <div class="hero-eyebrow">
-        <span class="tag">Series: Stasis Mk.I</span>
-        <span class="tag">Editorial</span>
-      </div>
-      <h1>Collection<br>Arctic 01<sup>™</sup></h1>
-      <p class="hero-lead">
-        คัดมาแล้ว 5 ตัวที่โดดเด่นที่สุดของไลน์ Extreme Cold —
-        พัฟเฟอร์เนื้อกลอสส์ ทนหนาวจัด งานเทคนิคสายสตรีท ที่เราอยากให้คุณเห็นก่อนใคร
-      </p>
-      <a href="#top5" class="hero-cta">
-        <span class="arrow">↗</span>
-        ดู Top 5 ทั้งหมด
-      </a>
-    </div>
-
-    <!-- ภาพหลัก: แทน .ph ด้วย <img src="รูปคุณ" alt="..."> ได้เลย -->
-    <div class="hero-shot">
-      <div class="ph">[ HERO IMAGE ]</div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== TOP 5 ===== -->
-<section class="top" id="top5">
-  <div class="wrap">
-
-    <div class="top-head">
-      <h2>The Top 5</h2>
-      <div class="sub">
-        <span class="tag">Ranked Selection</span>
-        <span class="tag">Extreme Cold Line</span>
-      </div>
-    </div>
-
-    <p class="top-intro">
-      นับถอยหลังจากอันดับ 05 สู่ตัวท็อปสุดของคอลเลกชัน —
-      แต่ละตัวเลือกจากงานตัดเย็บ เนื้อผ้า และการวางตัวในลุคจริง ไม่ใช่แค่หน้าตา
-    </p>
-
-    <!-- อันดับ 05 → 02 -->
-    <div class="rank-grid">
-
-      <article class="rank">
-        <div class="rank-img">
-          <span class="rank-no">05</span>
-          <div class="ph">[ IMG · 3:4 ]</div>
-        </div>
-        <div class="rank-body">
-          <div class="name">Glacier White<br>Insulated Puffer</div>
-          <div class="spec">Fabric · Matte Nylon<br>Rating · −30°C<br>Colour · Grey / Bone</div>
-          <p class="blurb">ทรงโอเวอร์ไซส์นุ่ม ให้ลุคอบอุ่นแบบไม่พยายาม</p>
-        </div>
-      </article>
-
-      <article class="rank">
-        <div class="rank-img">
-          <span class="rank-no">04</span>
-          <div class="ph">[ IMG · 3:4 ]</div>
-        </div>
-        <div class="rank-body">
-          <div class="name">Polar Gloss<br>Blue Puffer</div>
-          <div class="spec">Fabric · High-Gloss<br>Rating · −25°C<br>Colour · Blue Gloss</div>
-          <p class="blurb">ผิวสะท้อนแสงเย็น ๆ เด่นทันทีตั้งแต่ก้าวแรก</p>
-        </div>
-      </article>
-
-      <article class="rank">
-        <div class="rank-img">
-          <span class="rank-no">03</span>
-          <div class="ph">[ IMG · 3:4 ]</div>
-        </div>
-        <div class="rank-body">
-          <div class="name">Stealth Black<br>Heavy Puffer</div>
-          <div class="spec">Fabric · Shell Tech<br>Rating · −35°C<br>Colour · Navy / Black</div>
-          <p class="blurb">โทนมืดเรียบคม ใส่ได้ทุกลุคแบบไม่ต้องคิดเยอะ</p>
-        </div>
-      </article>
-
-      <article class="rank">
-        <div class="rank-img">
-          <span class="rank-no">02</span>
-          <div class="ph">[ IMG · 3:4 ]</div>
-        </div>
-        <div class="rank-body">
-          <div class="name">Icefield Blue<br>Tech Puffer</div>
-          <div class="spec">Fabric · Ripstop<br>Rating · −28°C<br>Colour · Ice Blue</div>
-          <p class="blurb">ดีเทลเทคนิคจัดเต็ม ทรงคลีนแต่มีมิติ</p>
-        </div>
-      </article>
-
-    </div>
-
-    <!-- ===== อันดับ 1 : SPOTLIGHT ===== -->
-    <div class="spotlight" id="spotlight">
-      <div class="spot-media">
-        <div class="ph">[ NO.1 IMAGE ]</div>
-        <span class="big-no">01</span>
-      </div>
-      <div class="spot-copy">
-        <div class="rank1">★ No.1 Pick — Editor's Choice</div>
-        <h3>Aurora Silver<br>Reflective Puffer</h3>
-        <p>
-          ตัวท็อปของ Arctic 01 — เนื้อ reflective เต็มตัวที่เปลี่ยนโทนตามแสง
-          จับคู่กับซิลูเอ็ตโอเวอร์ไซส์และดีเทลกันหนาวระดับ −40°C
-          ตัวเดียวที่รวมทั้งงานเทคนิคและความโดดเด่นไว้ครบ
-        </p>
-        <div class="spot-specs">
-          <span class="chip">Reflective Shell</span>
-          <span class="chip">−40°C Rating</span>
-          <span class="chip">Oversized Fit</span>
-          <span class="chip">Silver / White</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ===== FOOTER ===== -->
-<footer class="foot">
-  <div class="wrap foot-inner">
-    <div class="logo">PARN</div>
-    <div class="note">ARCTIC 01™ · TOP 5 EDITORIAL · STASIS MK.I</div>
-    <div class="nav-ico">
-      <span>ig</span><span>f</span><span>x</span>
-    </div>
-  </div>
-</footer>
+    <script>
+        // ปุ่มกดทักทาย: กดแล้วเด้ง alert ขึ้นมา
+        document.getElementById('greetBtn').addEventListener('click', function () {
+            alert('ยินดีที่ได้รู้จักนะ ขอบคุณที่แวะเข้ามาดูเว็บของเรา 💜');
+        });
+    </script>
 
 </body>
 </html>
